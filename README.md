@@ -10,15 +10,17 @@ This dashboard utilizes the DataCo Supply Chain which can be accesed through thi
 
 ## Problem Statement
 Some problems were identified from this dataset:
-1. Over the three-year period, sales showed a steady decrease. In 2015, total sales were around $10.62M. Sales slightly dropped by 0.2% to $10.60M in 2016. By 2017, sales continued to fall to $10.14M, decreasing about 4.3% from the previous years.
-2. Another noticeable problems is the delivery performance. Almost half of all deliveries were classified as late. This means that only around half of the shipments reached customer on time. Such condition could easily reduce customer satisfaction and eventually impact future sales.
+1. **Over the three-year period, sales showed a steady decrease**. In 2015, total sales were around $10.62M. Sales slightly dropped by 0.2% to $10.60M in 2016. By 2017, sales continued to fall to $10.14M, decreasing about 4.3% from the previous years.
+2. Another noticeable problems is the delivery performance. **Almost half of all deliveries were classified as late**. This means that only around half of the shipments reached customer on time. Such condition could easily reduce customer satisfaction and eventually impact future sales.
 <p align="center">
   <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/f07ece0e-d238-4636-aeb7-888fabb32ce5" />
 </p>
 
 ## Objective
+Based on the problems above, the dashboard will be created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
 
-## Data Understanding
+## Building the Dashboard 
+### Data Understanding
 The dashboard focuses on analyzing Key Performance Indicator (KPI) and Logistic Indicator. Therefore, the main columns used in the analysis are listed below:
 - Sales per customer: Total sales value per customer
 - Benefit per order: Total profit generated from each order placed
@@ -36,3 +38,25 @@ The dashboard focuses on analyzing Key Performance Indicator (KPI) and Logistic 
 - Category name: Category of the purchased product
 - Customer Segment: Type of consumer is categorized into Consumer, Corporate, Home Office
 - Order Item Quantity: Item quantity per product of each order
+
+### Data Cleaning
+The goal of the data cleaning process was to change the raw data into a format that could be more easily analyzed. This stage involved ajusting several data types and creating additional columns. All of this stages were done in Power BI.
+- Data type adjustments:
+  - Sales and Benefit columns were converted into decimal number format.
+  - Order Date and Shipping Date (originally in U.S. date format 'mm/dd/yyyy') were converted to global date and time format 'dd/mm/yyyy'.
+  - Numerical columns such as Order Item Quantity, Days for Shipping (Real), and Days for Shipment (Scheduled) were converted to whole number format.
+- Additional column creation:
+  To simplify sorting in Delivery Status column, an additional column named Delivery Status Order was created based on earliest into latest status.
+  - Advance Shipping = 1,
+  - Shipping On Time = 2,
+  - Late Delivery = 3,
+  - Shipping Canceled = 4
+This transformation ensured the dataset is consistent, structured, and ready for further analysis in the dashboard.
+
+### Creating Metrics
+
+### Outlining The Dashboard
+
+## Answering the Problem
+
+
