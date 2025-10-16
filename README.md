@@ -54,9 +54,31 @@ The goal of the data cleaning process was to change the raw data into a format t
 This transformation ensured the dataset is consistent, structured, and ready for further analysis in the dashboard.
 
 ### Creating Metrics
+Key Performance Indicator should show a comparison between current period and the previous period to determine whether the performance is improving or declining. Therefore, it is necesarry to build several measures for the KPIS, such as those for the current period, the prevuous period, and the difference between the two. One example for the sales measure is shown below. For the KPI, loss measures for Sales and Orders were also created. These measures resprent the potential sales and orders that could have generated revenue but did not.
+
+<p align="center">
+  <img width="278" height="337" alt="image" src="https://github.com/user-attachments/assets/a341329e-3229-436f-948d-50e9a5c05748" />
+<p/>
+
+Another issue identified was related to delivery time. To address this, Reorder Point (ROP) and Safety Stock (SS) analyses were used to explore possible solutions.
+For an e-commerce business, one of the key advantages lies in providing instant or faster delivery. To maintain this advantage, the company needs to analyze its ROP to improve delivery performance, as the data indicates that most shipments were delivered late.  When inventory reaches ROP, e-commerce or business should order new inventory to keep up with the daily demand and service level. ROP was calculated by the formula below. [1]
+
+<p align="center">
+  <img width="350" height="80" alt="image" src="https://github.com/user-attachments/assets/88ae76fc-fbe3-4bd7-ab75-8e6d2c7e2256" />
+<p/>
+
+In this formula, the variables include daily sales velocity (daily demand), lead time in days, and safety stock. Daily sales were calculated using _Order Item Quantity_ for each days, while lead time was represented by average of _Days for shipping (real)_. For safety stock, another common formula is used [2]. This formula also incorporates lead time and demand for each product. The value Z represents the service level, which in this case is 95%, corresponding to a Z-score of 1.65 from the normal distribution.
+
+<p align="center">
+  <img width="300" height="78" alt="image" src="https://github.com/user-attachments/assets/e782a927-8e83-421e-a8d3-19bbc5627b0b" />
+<p/>
 
 ### Outlining The Dashboard
+After creating the metrics, the next step is outlining the dashboard.
 
 ## Answering the Problem
 
 
+Source: 
+[1] https://www.netsuite.com/portal/resource/articles/inventory-management/reorder-point-rop.shtml
+[2] https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf
