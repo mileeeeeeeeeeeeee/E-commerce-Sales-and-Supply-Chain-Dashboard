@@ -6,7 +6,7 @@ The digital era has completely changed the way people buy and sell products. Ove
 E-commerce allows business, especially B2B companies, to reach customer all around the world. However, this convenience also comes with new challenges in managing supply chain operations such as ensuring timely shipments, maintaining accurate inventory, and monitoring delivery performance. 
 
 ## Data Description
-This dashboard utilizes the DataCo Supply Chain which can be accessed through this [link](https://data.mendeley.com/datasets/8gx2fvg2k6/5) or repository. The dataset contains 52 columns and 180k rows of transactional and logistic records. DataCo primarily sells three type of products (Clothing, Sports, and Electronic Supplies), with product categories that may vary over time. The dataset covers transactions from January 2015 to January 2018, which also serves as the time constraint for this dashboard.
+This dashboard utilizes the DataCo Supply Chain which can be accessed through this [link](https://data.mendeley.com/datasets/8gx2fvg2k6/5). The dataset contains 52 columns and 180k rows of transactional and logistic records. DataCo primarily sells three type of products (Clothing, Sports, and Electronic Supplies), with product categories that may vary over time. The dataset covers transactions from January 2015 to January 2018, which also serves as the time constraint for this dashboard.
 
 ## Objective
 Based on the background, the dashboard was created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
