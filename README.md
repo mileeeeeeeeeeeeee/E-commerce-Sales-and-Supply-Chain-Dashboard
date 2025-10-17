@@ -1,15 +1,15 @@
 # E-commerce-Sales-and-Supply-Chain-Dashboard
 
 ## Background
-The digital era has completely changed the way people buy and sell products. Over the past decade, online shopping has become part of everyday life, drivig the rapid rise of various e-commerce platforms. This shift not only influences how consumer behave but also reshape how businesses operate
+The digital era has completely changed the way people buy and sell products. Over the past decade, online shopping has become part of everyday life, driving the rapid rise of various e-commerce platforms. This shift not only influences how consumer behave but also reshape how businesses operate.
 
 E-commerce allows business, especially B2B companies, to reach customer all around the world. However, this convenience also comes with new challenges in managing supply chain operations such as ensuring timely shipments, maintaining accurate inventory, and monitoring delivery performance. 
 
 ## Data Description
-This dashboard utilizes the DataCo Supply Chain which can be accesed through this [link](https://data.mendeley.com/datasets/8gx2fvg2k6/5) or repository. The dataset contains 52 columns and 180k rows of transactional and logistic records. DataCo primarily sells three type of products clothing, sports, and electronic supplies, with product categories that may vary over time. The dataset covers transactions from January 2015 to January 2018, which also serves as the time constraint for this dashboard.
+This dashboard utilizes the DataCo Supply Chain which can be accessed through this [link](https://data.mendeley.com/datasets/8gx2fvg2k6/5) or repository. The dataset contains 52 columns and 180k rows of transactional and logistic records. DataCo primarily sells three type of products (Clothing, Sports, and Electronic Supplies), with product categories that may vary over time. The dataset covers transactions from January 2015 to January 2018, which also serves as the time constraint for this dashboard.
 
 ## Objective
-Based on the background, the dashboard will be created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
+Based on the background, the dashboard was created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
 
 ## Building the Dashboard 
 ### Data Understanding
@@ -32,7 +32,7 @@ The dashboard focuses on analyzing Key Performance Indicator (KPI) and Logistic 
 - Order Item Quantity: Item quantity per product of each order
 
 ### Data Cleaning
-The goal of the data cleaning process was to change the raw data into a format that could be more easily analyzed. This stage involved ajusting several data types and creating additional columns. All of this stages were done in Power BI.
+The goal of the data cleaning process was to change the raw data into a format that could be more easily analyzed. This stage involved adjusting several data types and creating additional columns. All of this stages were done in Power BI.
 - Data type adjustments:
   - Sales and Benefit columns were converted into decimal number format.
   - Order Date and Shipping Date (originally in U.S. date format 'mm/dd/yyyy') were converted to global date and time format 'dd/mm/yyyy'.
@@ -43,16 +43,15 @@ The goal of the data cleaning process was to change the raw data into a format t
   - Shipping On Time = 2,
   - Late Delivery = 3,
   - Shipping Canceled = 4
-This transformation ensured the dataset is consistent, structured, and ready for further analysis in the dashboard.
+This transformation ensured the dataset was consistent, structured, and ready for further analysis in the dashboard.
 
 ### Creating Metrics
-Key Performance Indicator should show a comparison between current period and the previous period to determine whether the performance is improving or declining. Therefore, it is necesarry to build several measures for the KPIS, such as those for the current period, the prevuous period, and the difference between the two. One example for the sales measure is shown below. For the KPI, loss measures for Sales and Orders were also created. These measures resprent the potential sales and orders that could have generated revenue but did not.
+Key Performance Indicator should show comparisons between the current period and the previous period to determine whether the performance is improving or declining. Therefore, several measures were built for KPIs, such as those for the current period, the previous period, and the difference between them. One example of the sales measure is shown below. For the KPIs, loss measures for Sales and Orders were also created. These measures respresent the potential sales and orders that could have generated revenue but did not.
 
 <p align="center">
   <img width="278" height="337" alt="image" src="https://github.com/user-attachments/assets/a341329e-3229-436f-948d-50e9a5c05748" />
 <p/>
 
-Another issue identified was related to delivery time. To address this, Reorder Point (ROP) and Safety Stock (SS) analyses were used to explore possible solutions.
 For an e-commerce business, one of the key advantages lies in providing instant or faster delivery. To maintain this advantage, the company needs to analyze its ROP to improve delivery performance, as the data indicates that most shipments were delivered late.  When inventory reaches ROP, e-commerce or business should order new inventory to keep up with the daily demand and service level. ROP was calculated by the formula below [1].
 
 <p align="center">
@@ -101,11 +100,13 @@ The first section came with a year filter and show year-to-year performance chan
 The second section featured a month filter and showed month-to-month performance changes. It also provided information about delivery performance, such as total order and average shipping day. Safety Stock and Reorder Point were also added to provide a deeper understanding of inventory and delivery reliability. This section helps users monitor delivery consistency, identify delays, and evaluate how inventory management decisions can affect shipping performance.
 
 <p align="center">
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/ef9b83c0-b747-470d-a8a3-ac5743153138" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/e6aaa5a9-78f4-45a6-abc2-0b30aa34ba2e" />
+
 </p>
 
 <p align="center">
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/46a1ee76-dca6-4e38-8811-75a801d4fb9c" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/6c92742e-1107-432b-acb9-fa0c6c284fbe" />
+
 </p>
 
 **3. Detailed Orders Section**
@@ -115,9 +116,23 @@ The third section displays a detailed table of all individual orders, allowing m
 </p>
 
 ## What The Data Tells Us
+1. **Sales and Profit Performance Over Time**. Over the three-year period, sales showed a steady decrease. In 2015, total sales were around $10.62M. Sales slightly dropped by 0.2% to $10.60M in 2016. By 2017, sales continued to fall to $10.14M, decreasing about 4.3% from the previous years. While sales declined, profit followed a fluctuating trend. Profit decreased by 0.5% in 2016, but rebounded by 0.5% in 2017.
+2. **Regional Market Trends**. When looking at market regions, customers from Asia Pacific, Africa, and USCA (United States & Canada) experienced the largest sales decline. In contrast, Latin America and Europe became the main contributors to total sales in 2017. 
+3. **Customer Segments**. All customer segment (Consumer, Corportate, and Home Office) also showed lower sales figures, even though profit and order volume slightly increased. Customer were still purchasing actively but tended to buy lower-priced products, which explains why total order volume and profit grew while sales value declined.
+4. **Product Category Trends**. Interestingly, electronic products such as computers emerged as a new growth trend in 2017, entering the top 10 performing categories in terms of sales, profit, and orders. This trend continued in 2018, when video games became one of the most frequently ordered items, indicating a growing interest in technology-related products among customers.
+5. **State Performance**. Sales performance across different states varied, but overall, the number of orders and profit remained relatively balanced. This indicates that while revenue decreased in certain areas, the company maintained operational stability and profitability across most regions.
+7. Another noticeable problems is the delivery performance. By January of 2018, every product category recorder longer actual shipping times compared to the scheduled ones. About half of all deliveries were classified as late, meaning that only around half of the shipments reached customer on time. Such condition could easily reduce customer satisfaction and eventually impact future sales.
 
+## Strategies Recommendation
+After getting several insights from the data, these are some strategies that could help the e-commerce improve its performance.
+1. **Strengthening Market Presence**. The growing markets in Latin America and Europe show big potential so focusing marketing and partnership in these regions could help offset losses in other areas. At the same time, introducing customer loyalty programs (membership) or targeted pricing strategies in other regions might help rebuild sales performance.
+2. **Optimizing Electronic Product Trends**. The shift toward electronics and gaming products could be an opportunity to expand into tech-related products or run more targeted promotion around fast-growing categories. Balancing this with periodic reviews of low-performing items would help keep inventory lean and responsive to trends.
+3. **Improving Supply Chain Strategy**. With nearly half of the shipments arriving late, it’s clear that the logistics and inventory flow need better synchronization. Revisiting lead time accuracy, maintaining enough safety stock, and adopting real-time shipment tracking could make a big difference. These steps not only improve efficiency, but also build customer trust, which is crucial for an e-commerce business.
 
+Thank you for taking the time to explore this project.
 
 Source: 
+
 [1] https://www.netsuite.com/portal/resource/articles/inventory-management/reorder-point-rop.shtml
+
 [2] https://web.mit.edu/2.810/www/files/readings/King_SafetyStock.pdf
