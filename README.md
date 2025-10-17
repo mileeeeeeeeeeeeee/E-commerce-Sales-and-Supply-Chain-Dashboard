@@ -1,4 +1,4 @@
-# E-commerce-Sales-and-Supply-Chain-Dashboard
+# E-commerce Supply Chain Dashboard
 
 ## Background
 The digital era has completely changed the way people buy and sell products. Over the past decade, online shopping has become part of everyday life, driving the rapid rise of various e-commerce platforms. This shift not only influences how consumer behave but also reshape how businesses operate.
