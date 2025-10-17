@@ -8,16 +8,8 @@ E-commerce allows business, especially B2B companies, to reach customer all arou
 ## Data Description
 This dashboard utilizes the DataCo Supply Chain which can be accesed through this [link](https://data.mendeley.com/datasets/8gx2fvg2k6/5) or repository. The dataset contains 52 columns and 180k rows of transactional and logistic records. DataCo primarily sells three type of products clothing, sports, and electronic supplies, with product categories that may vary over time. The dataset covers transactions from January 2015 to January 2018, which also serves as the time constraint for this dashboard.
 
-## Problem Statement
-Some problems were identified from this dataset:
-1. **Over the three-year period, sales showed a steady decrease**. In 2015, total sales were around $10.62M. Sales slightly dropped by 0.2% to $10.60M in 2016. By 2017, sales continued to fall to $10.14M, decreasing about 4.3% from the previous years.
-2. Another noticeable problems is the delivery performance. **Almost half of all deliveries were classified as late**. This means that only around half of the shipments reached customer on time. Such condition could easily reduce customer satisfaction and eventually impact future sales.
-<p align="center">
-  <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/f07ece0e-d238-4636-aeb7-888fabb32ce5" />
-</p>
-
 ## Objective
-Based on the problems above, the dashboard will be created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
+Based on the background, the dashboard will be created to help the Supply Chain Management tracks how sales, profit, and delivery performance evolve over time. Through this dashboard, the team can quickly **spot inefficiencies in e-commerce performance, monitor key metrics, and plan improvements that lead to more efficient and reliable operations.**
 
 ## Building the Dashboard 
 ### Data Understanding
@@ -61,7 +53,7 @@ Key Performance Indicator should show a comparison between current period and th
 <p/>
 
 Another issue identified was related to delivery time. To address this, Reorder Point (ROP) and Safety Stock (SS) analyses were used to explore possible solutions.
-For an e-commerce business, one of the key advantages lies in providing instant or faster delivery. To maintain this advantage, the company needs to analyze its ROP to improve delivery performance, as the data indicates that most shipments were delivered late.  When inventory reaches ROP, e-commerce or business should order new inventory to keep up with the daily demand and service level. ROP was calculated by the formula below. [1]
+For an e-commerce business, one of the key advantages lies in providing instant or faster delivery. To maintain this advantage, the company needs to analyze its ROP to improve delivery performance, as the data indicates that most shipments were delivered late.  When inventory reaches ROP, e-commerce or business should order new inventory to keep up with the daily demand and service level. ROP was calculated by the formula below [1].
 
 <p align="center">
   <img width="350" height="80" alt="image" src="https://github.com/user-attachments/assets/88ae76fc-fbe3-4bd7-ab75-8e6d2c7e2256" />
@@ -78,32 +70,52 @@ After creating the metrics, the next step was to outline the dashboard. This ste
 1. **A KPI overview** for all supply chain activities, including sales, profit, orders, and customers.
    This page also highlights loss sales and orders, along with specific compariosn across markets, customer segment, products, and customer states. It helps management easily review and evaluate overall performance for each year.
 <p align="center">
-   <img width="783" height="491" alt="image" src="https://github.com/user-attachments/assets/46c504cd-6a67-4e0e-a2e2-35fb85d52576" />
+   <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/46c504cd-6a67-4e0e-a2e2-35fb85d52576" />
 <p/>
   
 2. **Logistic Performance** page focusing on delivery status and shipping duration. This page was created to monitor the performance of delivery (Problem 2). It also equipped with SS and ROP analysis to help the supply chain team anticipate potential delivery delays. This page allows the team to identify bottlenecks for each products and make data-driven decisions to improve shipping performance and service levels.
 <p align="center">
-  <img width="778" height="489" alt="image" src="https://github.com/user-attachments/assets/82be341f-904a-424d-b9c1-d1136634178b" />
+  <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/82be341f-904a-424d-b9c1-d1136634178b" />
 <p/>
   
-3. **Detailed Order Page** that presents individual transaction data. This page support management to trace specific orders, validate performance metrics, and explore deeper insights that might not be visible from the two other pages.
+3. **Detailed Orders Page** that presents individual transaction data. This page support management to trace specific orders, validate performance metrics, and explore deeper insights that might not be visible from the two other pages.
 <p align="center">
-  <img width="777" height="493" alt="image" src="https://github.com/user-attachments/assets/3f2d3c16-0ea9-460f-855f-0fa5c70aad6b" />
+  <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/3f2d3c16-0ea9-460f-855f-0fa5c70aad6b" />
 <p/>
 
 ### The Final Dashboard
-<img width="1273" height="715" alt="image" src="https://github.com/user-attachments/assets/cac1923f-85df-4015-86bc-d3f6d63ceddb" />
-<img width="1270" height="711" alt="image" src="https://github.com/user-attachments/assets/4e768c5d-9071-4754-b8ee-3ecda9d0e985" />
-<img width="1275" height="713" alt="image" src="https://github.com/user-attachments/assets/0a87d745-638b-4e92-aacd-84eb6b1b713e" />
-<img width="1274" height="711" alt="image" src="https://github.com/user-attachments/assets/ef9b83c0-b747-470d-a8a3-ac5743153138" />
-<img width="1274" height="710" alt="image" src="https://github.com/user-attachments/assets/46a1ee76-dca6-4e38-8811-75a801d4fb9c" />
-<img width="1275" height="713" alt="image" src="https://github.com/user-attachments/assets/58b7149b-22c5-463b-921f-47482bc6afe0" />
+Here is the final look of the dashboard:
 
+**1. KPI Overview Section**. 
+The first section came with a year filter and show year-to-year performance changes. Blue and greeen indicators were used to represent growth, while red and orange indicated a decline in performance. This section also featured a navigator that allows user to switch between Sales, Profit, and Orders metrics. By using this navigator, management can easily compare performance across different products, segments, or markets, making it simpler to identify which areas performed best each year.
+<p align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/cac1923f-85df-4015-86bc-d3f6d63ceddb" />
+</p>
+<p align="center">
+  <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4e768c5d-9071-4754-b8ee-3ecda9d0e985" />
+</p>
+<p align="center">
+  <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/0a87d745-638b-4e92-aacd-84eb6b1b713e" />
 
+**2. Logistic Performance Section**
+The second section featured a month filter and showed month-to-month performance changes. It also provided information about delivery performance, such as total order and average shipping day. Safety Stock and Reorder Point were also added to provide a deeper understanding of inventory and delivery reliability. This section helps users monitor delivery consistency, identify delays, and evaluate how inventory management decisions can affect shipping performance.
 
+<p align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/ef9b83c0-b747-470d-a8a3-ac5743153138" />
+</p>
 
+<p align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/46a1ee76-dca6-4e38-8811-75a801d4fb9c" />
+</p>
 
-## Answering the Problem
+**3. Detailed Orders Section**
+The third section displays a detailed table of all individual orders, allowing management to explore transaction-level information. At the top of the dashboard, filter was provided to select date ranges dynamically. 
+<p align="center">
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/58b7149b-22c5-463b-921f-47482bc6afe0" />
+</p>
+
+## What The Data Tells Us
+
 
 
 Source: 
