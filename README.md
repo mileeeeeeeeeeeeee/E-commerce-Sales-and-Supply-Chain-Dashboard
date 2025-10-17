@@ -74,7 +74,34 @@ In this formula, the variables include daily sales velocity (daily demand), lead
 <p/>
 
 ### Outlining The Dashboard
-After creating the metrics, the next step is outlining the dashboard.
+After creating the metrics, the next step was to outline the dashboard. This steps helps visualize how the information will be arranged and displayed. The dashboard was planned to be divided into three main pages:
+1. **A KPI overview** for all supply chain activities, including sales, profit, orders, and customers.
+   This page also highlights loss sales and orders, along with specific compariosn across markets, customer segment, products, and customer states. It helps management easily review and evaluate overall performance for each year.
+<p align="center">
+   <img width="783" height="491" alt="image" src="https://github.com/user-attachments/assets/46c504cd-6a67-4e0e-a2e2-35fb85d52576" />
+<p/>
+  
+2. **Logistic Performance** page focusing on delivery status and shipping duration. This page was created to monitor the performance of delivery (Problem 2). It also equipped with SS and ROP analysis to help the supply chain team anticipate potential delivery delays. This page allows the team to identify bottlenecks for each products and make data-driven decisions to improve shipping performance and service levels.
+<p align="center">
+  <img width="778" height="489" alt="image" src="https://github.com/user-attachments/assets/82be341f-904a-424d-b9c1-d1136634178b" />
+<p/>
+  
+3. **Detailed Order Page** that presents individual transaction data. This page support management to trace specific orders, validate performance metrics, and explore deeper insights that might not be visible from the two other pages.
+<p align="center">
+  <img width="777" height="493" alt="image" src="https://github.com/user-attachments/assets/3f2d3c16-0ea9-460f-855f-0fa5c70aad6b" />
+<p/>
+
+### The Final Dashboard
+<img width="1273" height="715" alt="image" src="https://github.com/user-attachments/assets/cac1923f-85df-4015-86bc-d3f6d63ceddb" />
+<img width="1270" height="711" alt="image" src="https://github.com/user-attachments/assets/4e768c5d-9071-4754-b8ee-3ecda9d0e985" />
+<img width="1275" height="713" alt="image" src="https://github.com/user-attachments/assets/0a87d745-638b-4e92-aacd-84eb6b1b713e" />
+<img width="1274" height="711" alt="image" src="https://github.com/user-attachments/assets/ef9b83c0-b747-470d-a8a3-ac5743153138" />
+<img width="1274" height="710" alt="image" src="https://github.com/user-attachments/assets/46a1ee76-dca6-4e38-8811-75a801d4fb9c" />
+<img width="1275" height="713" alt="image" src="https://github.com/user-attachments/assets/58b7149b-22c5-463b-921f-47482bc6afe0" />
+
+
+
+
 
 ## Answering the Problem
 
